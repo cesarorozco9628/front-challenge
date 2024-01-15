@@ -63,6 +63,10 @@ select{
   padding: 0.5rem 2rem !important;
 }
 
+.btn a {
+  color:white !important;
+}
+
 .bg-login-side{
   background-image: url('../../public/img/map_1.jpg');
   background-size: cover;

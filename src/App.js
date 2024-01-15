@@ -27,6 +27,12 @@ function App() {
                     <SettingsPages/>
                 </ProtectedRoute>
             </Route>
+            {/* Ruta a Home protegida */}
+            <Route path='/'>
+                <ProtectedRoute>
+                    <Home/>
+                </ProtectedRoute>
+            </Route>
             {/* Ruta para iniciar sesión */}
             <Route path='/login'>
                 <Login/>

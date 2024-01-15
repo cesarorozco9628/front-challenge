@@ -19,7 +19,7 @@ const PageNotFound = () => {
                     <div className='col-12 d-flex justify-content-center'>
                         <div className='btn'>
                             {login ? 
-                                <Link href='/'>Home</Link>
+                                <Link href='/home'>Home</Link>
                                 :
                                 <Link href='/login'>Inicia sesión</Link>
                             }
