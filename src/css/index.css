@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
+
+:root{
+  --color-main:brown;
+  --color-border:#c7c5c5;
+  --color-bg:antiquewhite;
+  --color-error: #dd0000
+}
+
+*{
+  font-family: 'Open Sans';
+  color: var( --color-main ) !important;
+
+}
+
+a, ul, li{
+  text-decoration: none !important;
+}
+
+select{
+  height: fit-content;
+}
+
+
+.bg-menu {
+  background-color: var(--color-bg);
+}
+
+.profile-user{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color-main);
+}
+
+.letter-user{
+  color: white !important;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.item-menu:hover{
+  color:white !important;
+  background-color: var(--color-main);
+  cursor: pointer;
+}
+
+.font-error-page{
+  font-size: 120px;
+  font-weight: 700;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form-control{
+  box-shadow: 2px 2px 16px -3px rgb(211 209 209 / 63%) inset;
+}
+
+.btn{
+  background-color: var(--color-main) !important;
+  border: 1px solid var(--color-bg) !important;
+  color: white !important;
+  padding: 0.5rem 2rem !important;
+}
+
+.bg-login-side{
+  background-image: url('../../public/img/map_1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header-log{
+  font-family: 'Pacifico', sans-serif;
+
+}
+
+.icon-menu-mobile{
+  position:fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.eye-password{
+  width: 1rem;
+  cursor: pointer;
+}
+
+.icon-close-menu{
+  top:0;
+  right: 5px;
+}
+
+.position-eye-password{
+  position: absolute;
+  top: 6px;
+  right: 10px;
+}
+
+.error-message-field {
+  position: absolute;
+  color: var(--color-error) !important;
+  font-size: 10px;;
+}
+
+.select-lng {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.error-message-container {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: var(--color-error); /* Color de fondo del mensaje de error */
+  animation: showError 0.3s ease forwards; /* Animación de la altura */
+}
+
+.error-message {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: #fff !important; /* Color del texto del mensaje de error */
+}
+
+.active>.page-link, .page-link.active {
+  z-index: 3;
+  color: #fff !important;
+  background-color: var(--color-main) !important;
+  border-color: var(--color-main) !important;
+}
+
+.pagination-page-active{
+  color:#fff !important;
+  background-color: var(--color-main) !important;
+}
+
+@keyframes showError {
+  to {
+    height: 60px; /* Altura deseada del mensaje de error */
+  }
+}
+/* Estilos para pantallas con un ancho máximo de 600px */
+@media only screen and (max-width: 600px) {
+  .font-error-page{
+    font-size: 120px;
+  }
+  .header-log{
+    font-size: 55px;
+  }
+  .fullscreen-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo opcional */
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(100%);
+    z-index: 100;
+  }
+  
+  
+  
+  .fullscreen-menu.active {
+    transform: translateY(0);
+  }
+  
+}
+
+/* Estilos para pantallas con un ancho entre 601px y 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .font-error-page{
+    font-size: 160px;
+  }
+  .header-log{
+    font-size: 80px;
+  }
+  .fullscreen-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo opcional */
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(100%);
+    z-index: 100;
+  }
+  
+  
+  
+  .fullscreen-menu.active {
+    transform: translateY(0);
+  }
+  
+}
+
+/* Estilos para pantallas con un ancho mayor o igual a 901px */
+@media only screen and (min-width: 901px) {
+  .font-error-page{
+    font-size: 200px;
+  }
+  .header-log{
+    font-size: 80px;
+  }
+
+  .error-message-container{
+    width: 50%;
+  }
+}

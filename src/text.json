@@ -1,0 +1,63 @@
+{
+    "lenguage":[
+        "en",
+        "es-mx"
+    ],
+    "LINK_API_REST":"https://restcountries.com/v3.1/all?fields=name,capital,currencies,continents,population",
+    "en":{
+        "login":{
+            "header":"Countries",
+            "placeholder_email":"Your Email",
+            "placeholder_password":"Your Password",
+            "login":"Log in",
+            "emailError":"Intro a email valid",
+            "passwordError":"Intro a password",
+            "errorForm":"Authentication Error: Please Check Your Information",
+            "Update":"Update"
+        },
+        "logout":{
+            "button":"Log out"
+        },
+        "menu":{
+            "main":"Home",
+            "settings":"Settings",
+            "lenguage":"Select Lenguage:"
+        },
+        "home":{
+            "title":"Countries",
+            "name":"Name",
+            "capital":"Capital",
+            "continent":"Continent",
+            "population":"Population",
+            "currency":"Currency"
+        }
+    },
+    "es-mx":{
+        "login":{
+            "header":"Paises",
+            "placeholder_email":"Ingresa tu correo",
+            "placeholder_password":"Ingresa una contraseña",
+            "login":"Inicio de sesión",
+            "emailError":"Ingresa un correo valido",
+            "passwordError":"Ingresa una contraseña",
+            "errorForm":"Error de Autenticación: Por favor, verifica tu información",
+            "Update":"Actualizar"
+        },
+        "logout":{
+            "button":"Cerrar sesión"
+        },
+        "menu":{
+            "main":"Paises",
+            "settings":"Ajustes",
+            "lenguage":"Selecciona el idioma:"
+        },
+        "home":{
+            "title":"Paises",
+            "name":"Nombre",
+            "capital":"Capital",
+            "continent":"Continente",
+            "population":"Población",
+            "currency":"Moneda"
+        }
+    }
+}
